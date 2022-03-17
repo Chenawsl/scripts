@@ -7,11 +7,11 @@
 const $ = new require('./env').Env('葫芦侠自动签到');
 const notify = $.isNode() ? require('./sendNotify') : '';
 let total = process.env.HLX_ACCOUNTS, totalList = [], message = '';
-const HLX_API = 'http://api.muxiuge.cn/API/hlxlogin.php?key=[key值]';
+const HLX_API = 'http://api.muxiuge.cn/API/hlxlogin.php';
 const headers = {
     "Connection": "close",
     "Content-Type": "application/x-www-form-urlencoded",
-    "Host": "floor.huluxia.com",
+    "Host": "api.muxiuge.cn/API/hlxlogin.php",
     "Accept-Encoding": "gzip",
     "User-Agent": "okhttp/3.8.1"
 };
